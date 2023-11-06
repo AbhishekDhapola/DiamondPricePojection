@@ -1,15 +1,14 @@
 import os
 import sys
-src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'src'))
-sys.path.insert(0, src_path)
-from src.logger import logging
-from src.exception import CustomException
+sys.path.append('D:/Abhishek/PWjava/DS/Diamond Price Prediction Project/src')
+from logger import logging
+from exception import CustomException
 import pandas as pd
 
-from src.components.data_ingestion import DataIngestion
+from components.data_ingestion import DataIngestion
 
-from src.components.data_transformation import DataTransformation
-from src.components.model_trainer import ModelTrainer
+from components.data_transformation import DataTransformation
+from components.model_trainer import ModelTrainer
 
 
 if __name__=='__main__':
