@@ -1,14 +1,15 @@
 import os
 import sys
 sys.path.append('D:/Abhishek/PWjava/DS/Diamond Price Prediction Project/src')
+sys.path.append('D:/Abhishek/PWjava/DS/Diamond Price Prediction Project/src/components')
 from logger import logging
 from exception import CustomException
 import pandas as pd
 
 from components.data_ingestion import DataIngestion
 
-from components.data_transformation import DataTransformation
-from components.model_trainer import ModelTrainer
+from data_transformation import DataTransformation
+from model_trainer import ModelTrainer
 
 
 if __name__=='__main__':
